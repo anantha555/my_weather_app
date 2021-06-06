@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(59, 58, 58);
+    color: rgb(250, 250, 250);
+    background-image: url('https://source.unsplash.com/1600x900/?sky');
+    font-size: 120%;
+}
+
+.continer {
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.left_sec {
+    min-width: 70%;
+    margin-top: 50vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150PX;
+    min-width: 150PX;
+}
+
+.left>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_sec_1>div>h1 {
+    padding: 0;
+    font-size: 90px;
+    margin: 0;
+}
+
+.left_sec_2>div>h2 {
+    padding: 0;
+    font-size: 50px;
+    margin: 0;
+}
+
+.left_sec_2>div>h3 {
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+}
+
+.left_sec_3>div>h3 {
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.right_sec {
+    min-width: 30%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.right_sec button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    outline-offset: 20px;
+    padding: 0.4em 1em;
+    background: #7c7c7c2b;
+    background: transparent;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    color: white;
+    border-bottom: 1px solid #e6ecee;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.right_sec button:hover {
+    background: #7c7c7c6b;
+}
+
+.weather_details>h2 {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.weather_details>h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0.5em auto 0em;
+    background: white;
+    opacity: 0.5;
+}
+
+.weather_details p {
+    padding-bottom: 15px;
+}
+
+.weather_details>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:500px) {
+    .continer {
+        flex-direction: column;
+    }
+    .left_sec {
+        flex-direction: column;
+        margin: 0;
+    }
+    .search {
+        justify-content: center;
+    }
+    .weather_details {
+        padding: 10px;
+    }
+}
